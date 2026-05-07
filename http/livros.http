@@ -7,6 +7,6 @@ POST {{url}}
 Content-Type: application/json
 
 {
-    "titulo": "Assassinato no Expresso do Oriente",
-    "generoId": 5
+    "titulo": "E não sobrou nenhum",
+    "generoId": 2
 }

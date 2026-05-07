@@ -17,7 +17,11 @@ const router = Router();
 
 router.get("/", async (req: Request, res: Response) => {
   try {
-    const generos = await prisma.genero.findMany();
+    const generos = await prisma.genero.findMany({
+        include: {
+            livros: true
+        }
+    });
 
     res.json(generos);
   } catch (error) {
